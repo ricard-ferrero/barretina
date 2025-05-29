@@ -1,14 +1,4 @@
-[Integer, Float].each do |numerical|
-  numerical.class_eval do
-    alias_method :original_multiply, :*
-    private :original_multiply
-
-    def * n
-      return n * self if n.is_a? VectorSpace::Vector
-      original_multiply n
-    end
-  end
-end
+require './lib/extenders'
 
 module VectorSpace
   class Vector
