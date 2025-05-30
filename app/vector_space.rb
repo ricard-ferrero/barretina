@@ -13,19 +13,16 @@ module VectorSpace
     end
 
     def + vector
-      raise "Cannot add #{vector.class} to vectors" unless vector.is_a? Vector
       raise 'Cannot add vectors with different dimensions' unless dimension == vector.dimension
       Vector.new *(0...dimension).map { |i| coordenates[i] + vector.coordenates[i] }
     end
 
     def - vector
-      raise "Cannot substract #{vector.class} to a vectors" unless vector.is_a? Vector
       raise 'Cannot substract vectors with different dimensions' unless dimension == vector.dimension
       Vector.new *(0...dimension).map { |i| coordenates[i] - vector.coordenates[i] }
     end
 
     def * scalar
-      raise 'Scalar must be Integer or Float' unless scalar.is_a? Numeric
       Vector.new *coordenates.map { |c| c * scalar }
     end
 
@@ -42,12 +39,6 @@ module VectorSpace
 
     def != vector
       !(self==vector)
-    end
-
-    def coordenates= args
-      raise 'Coordenates must be defined within an Array' unless args.is_a? Array
-      raise 'Coordenates values must be Integer or Float' if args.map{|c| c.is_a? Numeric}.include? false
-      @coordenates = args
     end
 
     def to_s
