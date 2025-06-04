@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'bundler/setup'
+require './app/vector_space'
+require 'irb'
+
+
+puts "\e[1mBCM\e[0m - Barretina Console Mode"
+
+IRB.setup(nil) # El argumento 'nil' es para la ruta de la aplicación, generalmente no es necesaria aquí
+
+# Ahora puedes configurar IRB.conf
+IRB.conf[:PROMPT_MODE] = :BCM
+IRB.conf[:PROMPT] ||= {} # Asegúrate de que el hash de prompts existe
+IRB.conf[:PROMPT][:BCM] = {
+  :PROMPT_I => "%N:%03n:%i> ", # Prompt para entrada (input)
+  :PROMPT_N => "%N:%03n:%i> ", # Prompt para entrada subsiguiente (next)
+  :PROMPT_S => "%N:%03n:%i%l ", # Prompt para cadenas largas (string)
+  :PROMPT_C => "%N:%03n:%i* ", # Prompt para continuaciones (continuation)
+  :RETURN   => "-> %s\n"            # Formato de retorno de valores
+}
+IRB.conf[:AP_NAME] = 'bcm'
+IRB.conf[:IRB_NAME] = 'bcm'
+IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.barretina/bcm/.bcm-history"
+IRB.conf[:SAVE_HISTORY] = 1000
+# Opcional: Desactivar la carga de .irbrc si quieres un control total
+# IRB.conf[:RC] = false
+
+
+# IRB.start
+
+workspace = IRB::WorkSpace.new(binding)
+irb = IRB::Irb.new(workspace)
+
+IRB.conf[:MAIN_CONTEXT] = irb.context
+trap("SIGINT") { irb.signal_handle }
+
+# # Comenzar la consola interactiva
+catch(:IRB_EXIT) { irb.eval_input }
