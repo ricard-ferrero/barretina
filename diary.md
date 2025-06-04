@@ -79,3 +79,13 @@ end
 It's time to start with tests!
 - study differents ways to test a Ruby application and choose one
 - prepare some tests before continuing with development
+
+## 04/06/2025
+
+I have explored and researched about how to structure correctly a Ruby project, and I move some files.
+
+I named the console mode as BCM, from "Barretina Console Mode", and I make some configurations to play with the IRB interface. My intention is to make some kind of a config file for the BCM, but at the moment I put everithing in the same file. And also, isn't in a professional way, I need to invest some time to research and consult into professional projects to understand how really I can configure IRB to make my own PERL for the project (there isn't much information about that).
+
+### TO DO
+- Configure BCM in a file, not in `bin/bcm`.
+- Explore a better way to make run BCM.
