@@ -1,4 +1,4 @@
-require './lib/extenders'
+require_relative 'vector_space/extenders'
 
 module VectorSpace
   class Vector
@@ -42,7 +42,6 @@ module VectorSpace
 
     def != vector
       !(self==vector)
-      # No rescue because take advantage of the Vector#== rescue
     end
 
     def to_s

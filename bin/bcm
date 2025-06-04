@@ -2,9 +2,9 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
-require './app/vector_space'
 require 'irb'
 
+require_relative '../lib/vector_space'
 
 puts "\e[1mBCM\e[0m - Barretina Console Mode"
 
