@@ -1,3 +1,10 @@
+PATH
+  remote: .
+  specs:
+    barretina (0.1.0)
+      irb (~> 1.15)
+      ruby2d (~> 0.12.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -27,6 +34,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  barretina!
   irb (~> 1.15)
   ruby2d (~> 0.12.1)
 

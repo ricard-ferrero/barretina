@@ -2,9 +2,9 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
+require 'barretina'
 require 'irb'
 
-require_relative '../lib/barretina'
 
 puts "\e[1mBCM\e[0m - Barretina Console Mode"
 
@@ -20,7 +20,7 @@ IRB.conf[:PROMPT][:BCM] = {
   :PROMPT_C => "%N:%03n:%i* ", # Prompt para continuaciones (continuation)
   :RETURN   => "-> %s\n"            # Formato de retorno de valores
 }
-IRB.conf[:AP_NAME] = 'bcm'
+# IRB.conf[:AP_NAME] = 'bcm'
 IRB.conf[:IRB_NAME] = 'bcm'
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.barretina/bcm/.bcm-history"
 IRB.conf[:SAVE_HISTORY] = 1000

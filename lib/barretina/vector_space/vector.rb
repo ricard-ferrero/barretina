@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module VectorSpace
   class Vector
     attr_accessor :coordenates
