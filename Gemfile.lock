@@ -1,14 +1,34 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    date (3.4.1)
+    erb (5.0.1)
+    io-console (0.8.0)
+    irb (1.15.2)
+      pp (>= 0.6.0)
+      rdoc (>= 4.0.0)
+      reline (>= 0.4.2)
+    pp (0.6.2)
+      prettyprint
+    prettyprint (0.2.0)
+    psych (5.2.6)
+      date
+      stringio
+    rdoc (6.14.0)
+      erb
+      psych (>= 4.0.0)
+    reline (0.6.1)
+      io-console (~> 0.5)
     ruby2d (0.12.1)
+    stringio (3.1.7)
 
 PLATFORMS
   ruby
-  x86_64-linux-gnu
+  x86_64-linux
 
 DEPENDENCIES
+  irb (~> 1.15)
   ruby2d (~> 0.12.1)
 
 BUNDLED WITH
-   2.6.7
+   2.6.9
