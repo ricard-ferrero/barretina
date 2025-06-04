@@ -4,7 +4,7 @@
 require 'bundler/setup'
 require 'irb'
 
-require_relative '../lib/vector_space'
+require_relative '../lib/barretina'
 
 puts "\e[1mBCM\e[0m - Barretina Console Mode"
 

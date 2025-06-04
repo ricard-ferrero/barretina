@@ -1,5 +1,3 @@
-require_relative 'vector_space/extenders'
-
 module VectorSpace
   class Vector
     attr_accessor :coordenates
@@ -13,17 +11,11 @@ module VectorSpace
     end
 
     def + vector
-      Vector.new *[coordenates, vector.coordenates].transpose.map(&:sum)
-    rescue => e
-      raise "Impossible add a #{vector.class} to a SpaceVector::Vector" unless vector.is_a? Vector
-      raise e
+      add(vector, &:sum)
     end
 
     def - vector
-      Vector.new *[coordenates, vector.coordenates].transpose.map{|array| array.inject(:-)}
-    rescue => e
-      raise "Impossible substract a #{vector.class} to a SpaceVector::Vector" unless vector.is_a? Vector
-      raise e
+      add(vector) { |array| array.inject(:-) }
     end
 
     def * scalar
@@ -51,6 +43,13 @@ module VectorSpace
     private
       def inspect
         "#<Vector #{self}>"
+      end
+
+      def add vector, &block
+        Vector.new *[coordenates, vector.coordenates].transpose.map(&block)
+      rescue => e
+        raise "Impossible add or substract a #{vector.class} to a SpaceVector::Vector" unless vector.is_a? Vector
+        raise e
       end
   end
 end
