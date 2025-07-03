@@ -1,8 +1,8 @@
 # Diary and notes
 
-I will try to intriduce here some notes of what I've been doing, not only for share but also for remember why I maked some decisions.
+I will try to intriduce here some notes of what I've been doing, not only for share but also for remember why I took some specific decisions.
 
-I work on this project only in my spare time, that means a lot of time between work sessions and the need to review past sessions. 
+I work on this project only in my spare time, that means a lot of time between work sessions and the necessity to review past sessions.
 
 Note: the entries are in reverted order, like the entries of a blog.
 
@@ -14,7 +14,7 @@ I named the console mode as BCM, from "Barretina Console Mode", and I make some 
 
 ### TO DO
 - Configure BCM in a file, not in `bin/bcm`.
-- Explore a better way to make run BCM.
+- Explore a better way to run BCM.
 
 
 ## 30/05/2025

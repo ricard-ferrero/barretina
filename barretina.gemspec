@@ -8,8 +8,10 @@ Gem::Specification.new do |s|
   s.authors = ["Ricard Ferrero"]
   s.email = ["ricard.ferrero.dev@gmail.com"]
 
-  s.summary = "A 2D and 3D figure modeler."
+  s.summary = "A 2D and 3D figure modeler (WIP)"
   s.description = <<~CODA
+    WORK IN PROGRESS
+
     A 2D and 3D figure modeler. Or, in other words: my own Blender.
 
     It's a fun, chill and cozy project thah I enjoy doing,
