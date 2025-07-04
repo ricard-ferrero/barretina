@@ -49,6 +49,8 @@ module VectorSpace
 
       def add vector, &block
         Vector.new *[coordenates, vector.coordenates].transpose.map(&block)
+      rescue IndexError => e
+        raise IndexError, "Impossible add or substract vectors with different dimesions"
       rescue => e
         raise "Impossible add or substract a #{vector.class} to a SpaceVector::Vector" unless vector.is_a? Vector
         raise e
