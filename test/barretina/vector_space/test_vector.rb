@@ -66,5 +66,13 @@ class TestVector < Minitest::Test
     assert_equal "(45, -105, 345)", (@vector_c * -3).to_s
     assert_equal "(54.0, -126.0, 414.0)", (@vector_c * -3.6).to_s
     assert_equal "(1.25, 3.1415)", (@vector_d * 1).to_s
+
+    assert_equal "()", (3 * @vector_a).to_s
+    assert_equal "(0.2)", (0.2 * @vector_b).to_s
+    assert_equal "(4)", (4 * @vector_b).to_s
+    assert_equal "(0)", (0 * @vector_b).to_s
+    assert_equal "(45, -105, 345)", (-3 * @vector_c).to_s
+    assert_equal "(54.0, -126.0, 414.0)", (-3.6 * @vector_c).to_s
+    assert_equal "(1.25, 3.1415)", (1 * @vector_d).to_s
   end
 end
