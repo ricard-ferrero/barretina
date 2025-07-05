@@ -14,6 +14,10 @@ MiniTest is realy easy and it's only Ruby sintax.
 
 I have already started with the firsts tests, testing the object `VectorSpace::Vector`.
 
+## 03/07/2025
+
+After studying about how to create a new gem, I build a gem and I published at https://rubygems.org/gems/barretina.
+
 ## 04/06/2025
 
 I have explored and researched about how to structure correctly a Ruby project, and I move some files.

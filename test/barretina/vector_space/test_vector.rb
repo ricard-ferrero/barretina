@@ -77,5 +77,36 @@ class TestVector < Minitest::Test
   end
 
   def test_that_a_vector_can_be_compared_as_equal_with_other_vector
+    assert_operator VectorSpace::Vector.new(), :==, @vector_a
+    refute_operator VectorSpace::Vector.new(1), :==, @vector_a
+    refute_operator VectorSpace::Vector.new(0), :==, @vector_a
+
+    assert_operator VectorSpace::Vector.new(1), :==, @vector_b
+    refute_operator VectorSpace::Vector.new(3), :==, @vector_b
+    refute_operator VectorSpace::Vector.new(1, 0), :==, @vector_b
+
+    assert_operator VectorSpace::Vector.new(-15, 35, -115), :==, @vector_c
+    refute_operator VectorSpace::Vector.new(-15, -35, -115), :==, @vector_c
+    refute_operator VectorSpace::Vector.new(15, 35, 115), :==, @vector_c
+
+    assert_operator VectorSpace::Vector.new(1.25, 3.1415), :==, @vector_d
+    assert_operator VectorSpace::Vector.new(1.250, 3.14150), :==, @vector_d
+  end
+
+  def test_that_a_vector_can_be_compared_as_different_with_other_vector
+    refute_operator VectorSpace::Vector.new(), :!=, @vector_a
+    assert_operator VectorSpace::Vector.new(1), :!=, @vector_a
+    assert_operator VectorSpace::Vector.new(0), :!=, @vector_a
+
+    refute_operator VectorSpace::Vector.new(1), :!=, @vector_b
+    assert_operator VectorSpace::Vector.new(3), :!=, @vector_b
+    assert_operator VectorSpace::Vector.new(1, 0), :!=, @vector_b
+
+    refute_operator VectorSpace::Vector.new(-15, 35, -115), :!=, @vector_c
+    assert_operator VectorSpace::Vector.new(-15, -35, -115), :!=, @vector_c
+    assert_operator VectorSpace::Vector.new(15, 35, 115), :!=, @vector_c
+
+    refute_operator VectorSpace::Vector.new(1.25, 3.1415), :!=, @vector_d
+    refute_operator VectorSpace::Vector.new(1.250, 3.14150), :!=, @vector_d
   end
 end
