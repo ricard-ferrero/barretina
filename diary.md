@@ -6,6 +6,14 @@ I work on this project only in my spare time, that means a lot of time between w
 
 Note: the entries are in reverted order, like the entries of a blog.
 
+## 04/07/2025
+
+After reading about tests, I have chosen "MiniTest", with the intention evoid spend too much time understanding a new DSL (like RSpec).
+
+MiniTest is realy easy and it's only Ruby sintax.
+
+I have already started with the firsts tests, testing the object `VectorSpace::Vector`.
+
 ## 04/06/2025
 
 I have explored and researched about how to structure correctly a Ruby project, and I move some files.
@@ -47,7 +55,7 @@ end
 ### TO DO
 
 It's time to start with tests!
-- study differents ways to test a Ruby application and choose one
+- (✔️ 04/07/2025) study differents ways to test a Ruby application and choose one
 - prepare some tests before continuing with development
 
 ## 29/05/2025
