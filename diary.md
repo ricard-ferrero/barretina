@@ -6,6 +6,19 @@ I work on this project only in my spare time, that means a lot of time between w
 
 Note: the entries are in reverted order, like the entries of a blog.
 
+## 05/07/2025
+
+I have wrote my firsts tests with MiniTest.
+
+At the moment, I want to structure the tests copying the `lib/` structure.
+
+I have made the tests for the object `VectorSpace::Vector`, which has the path `lib/barretina/vector_space/vector.rb`, therefore the tests will remain in the path `test/barretina/vector_space/test_vector.rb`.
+
+I deleted the `lib/barretina/version.rb` file, and put the version in the properly `lib/barretina.rb` file.
+
+### TO DO
+- Prepare a rake file to run all future tests
+
 ## 04/07/2025
 
 After reading about tests, I have chosen "MiniTest", with the intention evoid spend too much time understanding a new DSL (like RSpec).
@@ -60,7 +73,7 @@ end
 
 It's time to start with tests!
 - (✔️ 04/07/2025) study differents ways to test a Ruby application and choose one
-- prepare some tests before continuing with development
+- (✔️ 04/07/2025) prepare some tests before continuing with development
 
 ## 29/05/2025
 
