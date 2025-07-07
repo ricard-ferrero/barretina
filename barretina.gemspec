@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/barretina/version"
+require_relative "lib/barretina"
 
 Gem::Specification.new do |s|
   s.name = "barretina"
