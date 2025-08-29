@@ -6,6 +6,10 @@ I work on this project only in my spare time, that means a lot of time between w
 
 Note: the entries are in reverted order, like the entries of a blog.
 
+## 20/08/2025
+
+I rolled back with the version file for gemspec, and also added some basic information about tests in the `README.md`.
+
 ## 05/07/2025
 
 I have wrote my firsts tests with MiniTest.
