@@ -38,3 +38,26 @@ bcm:002:0> q = VectorSpace::Vector.new 2, -3
 bcm:003:0> p + q
 -> #<Vector (3, 2)>
 ```
+
+## Tests
+
+I use [Minitest](https://github.com/minitest/minitest) to create some unit tests.
+
+### Run tests
+
+At the moment, you can run the tests manually as a Ruby file. Eg:
+
+```
+$ ruby test/barretina/vector_space/test_vector.rb
+Run options: --seed 5323
+
+# Running:
+
+.........
+
+Finished in 0.003157s, 2851.0290 runs/s, 19006.8599 assertions/s.
+
+9 runs, 60 assertions, 0 failures, 0 errors, 0 skips
+```
+
+Eventually, I will reorganize in a Rake file.
