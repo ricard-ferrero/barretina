@@ -36,9 +36,7 @@ PLATFORMS
 
 DEPENDENCIES
   barretina!
-  irb (~> 1.15)
   minitest (~> 5.25)
-  ruby2d (~> 0.12.1)
 
 BUNDLED WITH
    2.6.9

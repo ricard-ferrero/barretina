@@ -8,7 +8,10 @@ Note: the entries are in reverted order, like the entries of a blog.
 
 ## 20/08/2025
 
-I rolled back with the version file for gemspec, and also added some basic information about tests in the `README.md`.
+I rolled back with the version file for gemspec, and also added some basic information about tests in the `README.md`. In order to increase the clarity of the gems used in the project, I remove the gems `Ruby2D` and `IRB` from the `Gemfile`, because of there are added into the gemspec file.
+
+I restart this project from hollidays with the `VectorSpace::Vector2D`: a class with inheritance from `VectorSpace::Vector` and incorporates the classical coordenates `x` and `y` -I will need these for the graphical representation.
+
 
 ## 05/07/2025
 
