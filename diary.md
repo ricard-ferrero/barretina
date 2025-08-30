@@ -6,7 +6,23 @@ I work on this project only in my spare time, that means a lot of time between w
 
 Note: the entries are in reverted order, like the entries of a blog.
 
-## 20/08/2025
+## 30/08/2025
+
+### Structure problems
+
+I noticed that the structure was confusing because of the modules (like `VectorSpace`) are out from the `Barretina` module.
+
+When I began the project, I focused to prepare the mathematics concepts into a specefic module, and then require it to construct the app. But, at the moment, I'm not sure to keep it as a separated module, and for that reason I packaged all into the `Barretina` module.
+
+Maybe in the future, if I think it's really useful, I separate both and create a new Ruby Gem only to work with vector spaces.
+
+Note: exists a lot of gems to manage vectors and geometry, but them have been abandoned in 2010 or 2013. I don't use it in order to improve my dev skills -and because I enjoy to code my apps. Is an option to separate the module `VectorSpace` into a different gem an publish it, but not now.
+
+### Vector2D tests
+
+I started a test file for `Vector2D`. It covers the few functionalities that class provide to the standard `Vector` class.
+
+## 29/08/2025
 
 I rolled back with the version file for gemspec, and also added some basic information about tests in the `README.md`. In order to increase the clarity of the gems used in the project, I remove the gems `Ruby2D` and `IRB` from the `Gemfile`, because of there are added into the gemspec file.
 

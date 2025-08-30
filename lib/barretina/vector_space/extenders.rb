@@ -4,7 +4,7 @@
     private :__multiply__
 
     def * n
-      return n * self if n.is_a? VectorSpace::Vector
+      return n * self if n.is_a? Barretina::VectorSpace::Vector
       __multiply__ n
     end
   end

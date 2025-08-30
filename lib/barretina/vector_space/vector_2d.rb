@@ -2,14 +2,16 @@
 
 require_relative 'vector'
 
-module VectorSpace
-  class Vector2D < VectorSpace::Vector
-    attr_accessor :x, :y
+module Barretina
+  module VectorSpace
+    class Vector2D < VectorSpace::Vector
+      attr_accessor :x, :y
 
-    def initialize x, y
-      @coordenates = [x, y]
-      @x = x
-      @y = y
+      def initialize x, y
+        @coordenates = [x, y]
+        @x = x
+        @y = y
+      end
     end
   end
 end
