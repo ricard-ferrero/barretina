@@ -30,6 +30,17 @@ At the begging, I put that module into `VectorSpace`, as a component inside a bi
 
 I started a test file for `Vector2D`. It covers the few functionalities that class provide to the standard `Vector` class.
 
+### `Line2D` and `Polygon` for `VectorSpace2D`
+
+There are two important maths objects to start rendering 2D objects: lines and polygons. Of course, the last is a combination of lines -and, at the same time, a combination of vertices.
+
+That vertices are represented by the `Vector2D` class, and today I constructed the other two important classes: `Barretina::Space2D::Line2D` and `Barretina::Space2D::Polygon`.
+
+The responsability of both classes is to have an structure of themselves, and later create wrapper classes to render with Ruby2D (the gem to represent information into the screen).
+
+### TO DO
+- Tests for `Barretina::Space2D::Line2D` and `Barretina::Space2D::Polygon`
+
 ## 29/08/2025
 
 I rolled back with the version file for gemspec, and also added some basic information about tests in the `README.md`. In order to increase the clarity of the gems used in the project, I remove the gems `Ruby2D` and `IRB` from the `Gemfile`, because of there are added into the gemspec file.
