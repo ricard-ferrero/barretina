@@ -5,6 +5,8 @@ require 'bundler/setup'
 require 'barretina'
 require 'irb'
 
+include Barretina::VectorSpace
+include Barretina::VectorSpace2D
 
 puts "\e[1mBCM\e[0m - Barretina Console Mode"
 
