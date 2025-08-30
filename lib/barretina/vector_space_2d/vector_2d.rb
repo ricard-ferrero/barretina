@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
-require_relative 'vector'
-
 module Barretina
-  module VectorSpace
+  module VectorSpace2D
     class Vector2D < VectorSpace::Vector
       attr_accessor :x, :y
 
