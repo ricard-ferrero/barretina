@@ -18,6 +18,13 @@ I write in a diary every big commit, and I summarize the evolution of the projec
 
 [If you feel some interest, take a look to it now: it's free!](diary.md)
 
+## Index of contents
+
+- [BCM: Barretina Console Mode](#bcm-barretina-console-mode)
+    - [Run BCM](#run-bcm)
+- [Tests](#tests)
+    - [Run tests](#run-tests)
+
 ## BCM: Barretina Console Mode
 
 BCM is a way to run all Barretina's code without the graphic interface. I created with the intention to test while I work on this project.

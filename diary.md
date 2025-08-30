@@ -10,6 +10,8 @@ Note: the entries are in reverted order, like the entries of a blog.
 
 ### Structure problems
 
+#### `VectorSpace` out from `Barretina`
+
 I noticed that the structure was confusing because of the modules (like `VectorSpace`) are out from the `Barretina` module.
 
 When I began the project, I focused to prepare the mathematics concepts into a specefic module, and then require it to construct the app. But, at the moment, I'm not sure to keep it as a separated module, and for that reason I packaged all into the `Barretina` module.
@@ -17,6 +19,12 @@ When I began the project, I focused to prepare the mathematics concepts into a s
 Maybe in the future, if I think it's really useful, I separate both and create a new Ruby Gem only to work with vector spaces.
 
 Note: exists a lot of gems to manage vectors and geometry, but them have been abandoned in 2010 or 2013. I don't use it in order to improve my dev skills -and because I enjoy to code my apps. Is an option to separate the module `VectorSpace` into a different gem an publish it, but not now.
+
+#### `VectorSpace2D` out from `VectorSpace`
+
+When I started with `Vector2D` class, I put into `VectorSpace` module. But I will need more 2D classes, and I created a VectorSpace2D module.
+
+At the begging, I put that module into `VectorSpace`, as a component inside a bigger concept. But it doesn't work correctly in the structure. I need to separate both, and use `VectorSpace2D` as a module which use `VectorSpace` as the classes works with inheritance, like a clone from `VectorSpace` but more oriented to 2D objects.
 
 ### Vector2D tests
 
