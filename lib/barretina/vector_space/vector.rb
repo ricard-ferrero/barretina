@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative 'vector/numeric_extension'
+
 module Barretina
   module VectorSpace
     class Vector
