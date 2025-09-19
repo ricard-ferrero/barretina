@@ -1,10 +1,23 @@
 # Diary and notes
 
-I will try to intriduce here some notes of what I've been doing, not only for share but also for remember why I took some specific decisions.
+Here is some notes of what I've been doing, not only for share but also for remember why I took some specific decisions.
 
 I work on this project only in my spare time, that means a lot of time between work sessions and the necessity to review past sessions.
 
 Note: the entries are in reverted order, like the entries of a blog.
+
+## 19/09/2025
+
+In order to improve the efficiency of the code, I did some benchmarks. I discovered that using `rescue` the performance decrease. The difference is not to wide, but I think that decision can be definitive when rendering a lot of vectors.
+
+With the same ambition, I had to rewrited the following functions for `Vector2D`:
+- +
+- -
+- *
+- ==
+- !=
+
+And also I have decided to remove the extensions I built to integers and other numeric types, which I used to write scalar products like mathematician notation.
 
 ## 30/08/2025
 
