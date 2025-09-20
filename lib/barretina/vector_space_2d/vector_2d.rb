@@ -8,10 +8,12 @@ module Barretina
           Vector2D.new x, y
         end
 
-        def ZERO
+        def zero
           @origin ||= Vector2D.new 0, 0
         end
       end
+
+      ZERO = Vector2D.zero
 
       def initialize x, y
         @coordenates = [x, y]
@@ -46,7 +48,7 @@ module Barretina
       end
 
       def * scalar
-        Vector.new( x * scalar, y * scalar)
+        Vector2D.new( x * scalar, y * scalar)
       end
 
       def == vector
@@ -54,7 +56,19 @@ module Barretina
       end
 
       def != vector
-        x == vector.x && y == vector.y
+        x != vector.x || y != vector.y
+      end
+
+      def add! vector
+        @coordenates = [ x + vector.x, y + vector.y ]
+      end
+
+      def substract! vector
+        @coordenates = [ x - vector.x, y - vector.y ]
+      end
+
+      def scalar! scalar
+        @coordenates = [ x * scalar, y * scalar ]
       end
     end
   end
