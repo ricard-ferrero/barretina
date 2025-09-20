@@ -6,6 +6,23 @@ I work on this project only in my spare time, that means a lot of time between w
 
 Note: the entries are in reverted order, like the entries of a blog.
 
+## 20/09/2025
+
+New instance methods:
+- `Vector2D#add!`
+- `Vector2D#substract!`
+- `Vector2D#scalar!`
+- `Vector2D#scalar!`
+
+New class methods:
+- `Vector2D[]`
+- `Vector2D.zero`
+
+New constants:
+- `Vector2D::ZERO`
+
+Also completed the tests for `Vector2D` class.
+
 ## 19/09/2025
 
 In order to improve the efficiency of the code, I did some benchmarks. I discovered that using `rescue` the performance decrease. The difference is not to wide, but I think that decision can be definitive when rendering a lot of vectors.
