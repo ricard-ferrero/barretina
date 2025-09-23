@@ -13,8 +13,12 @@ class TestLine < Minitest::Test
     @line = Line.new(@v1, @v2)
   end
 
-  def test_that_a_line_has_two_vectors
-    assert @line
+  def test_that_a_line_has_a_vector_p
+    assert @line.p
+  end
+
+  def test_that_a_line_has_a_vector_q
+    assert @line.q
   end
 
   def test_that_a_line_can_not_have_less_than_two_vectors
@@ -30,5 +34,21 @@ class TestLine < Minitest::Test
   def test_that_a_line_can_calculate_the_length
     expected_length = 5.0
     assert_equal expected_length, @line.length
+  end
+
+  def test_that_a_line_can_be_compared_as_equal_with_another
+    assert_operator(@line, :==, Line.new(@v1, @v2))
+    assert_operator(@line, :==, Line.new(Vector.new(0, 0), Vector.new(3, 4)))
+    refute_operator(@line, :==, Line.new(@v1, Vector.new(-3, 2)))
+    refute_operator(@line, :==, Line.new(Vector.new(-3, 2), @v2))
+    refute_operator(@line, :==, Line.new(Vector.new(-3, 2), Vector.new(6, 12)))
+  end
+
+  def test_that_a_line_can_be_compared_as_different_with_another
+    refute_operator(@line, :!=, Line.new(@v1, @v2))
+    refute_operator(@line, :!=, Line.new(Vector.new(0, 0), Vector.new(3, 4)))
+    assert_operator(@line, :!=, Line.new(@v1, Vector.new(-3, 2)))
+    assert_operator(@line, :!=, Line.new(Vector.new(-3, 2), @v2))
+    assert_operator(@line, :!=, Line.new(Vector.new(-3, 2), Vector.new(6, 12)))
   end
 end

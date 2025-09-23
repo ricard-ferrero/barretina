@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Barretina
   module VectorSpace2D
     class Polygon
@@ -24,6 +26,10 @@ module Barretina
           @vertices.each_with_index do |v, i|
             @lines << Line2D.new(v, @vertices[i-1])
           end
+        end
+
+        def inspect
+          "#<Polygon #{@vertices.join(' ')}>"
         end
     end
   end

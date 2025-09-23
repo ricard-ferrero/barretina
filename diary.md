@@ -12,11 +12,18 @@ I noticed that to define a constant `Vector2D::ZERO` as a vector zero has no sen
 
 For that reason, I removed that constant.
 
-I also add the class method `Vector[]`, and performed non important methods for `Line`, like `Line#to_s`.
+I also add the class method `Vector[]`, and performed non important methods for `Line` like `Line#to_s`, and compare methods like `Line#==` and `Line#!=`.
 
 Finished tests:
 - `TestLine`
 - `TestLine2D`
+- `TestPolygon`
+
+### New versions gem
+
+After I made the half of the updates, I pushed a new version `v0.1.2`, but later I had finished the most important algebraic elements to be able to start with the UI.
+
+For that reason, I decided to push another version, but in this case increasing the minor number of the version: `v0.2.0`.
 
 ## 20/09/2025
 
@@ -81,7 +88,7 @@ The responsability of both classes is to have an structure of themselves, and la
 
 ### TO DO
 - (✔️ 23/09/2025) Tests for `Barretina::Space2D::Line2D`
-- Test for `Barretina::Space2D::Polygon`
+- (✔️ 23/09/2025) Test for `Barretina::Space2D::Polygon`
 
 ## 29/08/2025
 

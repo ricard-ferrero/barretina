@@ -13,8 +13,12 @@ class TestLine2D < Minitest::Test
     @line = Line2D.new(@v1, @v2)
   end
 
-  def test_that_line_2d_can_have_two_vectors
-    assert @line
+  def test_that_line_2d_can_have_a_vector_p
+    assert @line.p
+  end
+
+  def test_that_line_2d_can_have_a_vector_q
+    assert @line.q
   end
 
   def test_that_line_2d_can_not_have_less_than_two_vectors

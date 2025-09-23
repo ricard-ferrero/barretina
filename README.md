@@ -1,4 +1,4 @@
-Barretina
+Barretina v0.2.0
 =========
 **WORK IN PROGRESS**
 

@@ -15,6 +15,14 @@ module Barretina
         Math.sqrt( v.coordenates.map{ |n| n**2 }.sum )
       end
 
+      def == line
+        @p == line.p && @q == line.q
+      end
+
+      def != line
+        @p != line.p || @q != line.q
+      end
+
       def to_s
         "#{@p}-#{@q}"
       end
