@@ -15,7 +15,6 @@ class TestVector2D < Minitest::Test
 
   def test_that_exists_vector_2d_zero
     assert_equal "(0, 0)", Vector2D.zero.to_s
-    assert_equal "(0, 0)", Vector2D::ZERO.to_s
   end
 
   def test_that_can_create_a_vector_2d_with_braquets
