@@ -5,7 +5,7 @@ require 'minitest/autorun'
 require 'barretina/vector_space'
 
 class TestVector < Minitest::Test
-  Vector = Barretina::VectorSpace::Vector
+  include Barretina::VectorSpace
 
   def setup
     @vector_a = Vector.new

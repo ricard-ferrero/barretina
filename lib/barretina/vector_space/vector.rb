@@ -3,6 +3,10 @@
 module Barretina
   module VectorSpace
     class Vector
+      def self.[](*args)
+        Vector.new *args
+      end
+
       attr_accessor :coordenates
 
       def initialize *args

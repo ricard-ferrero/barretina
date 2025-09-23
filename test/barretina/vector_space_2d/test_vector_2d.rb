@@ -5,7 +5,7 @@ require 'minitest/autorun'
 require 'barretina/vector_space_2d'
 
 class TestVector2D < Minitest::Test
-  Vector2D = Barretina::VectorSpace2D::Vector2D
+  include Barretina::VectorSpace2D
 
   def setup
     @x = 3

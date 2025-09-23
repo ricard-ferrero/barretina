@@ -15,9 +15,13 @@ module Barretina
         Math.sqrt( v.coordenates.map{ |n| n**2 }.sum )
       end
 
+      def to_s
+        "#{@p}-#{@q}"
+      end
+
       private
         def inspect
-          "#<Line #{@p}-#{@q}>"
+          "#<Line #{self}>"
         end
     end
   end

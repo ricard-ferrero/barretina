@@ -12,6 +12,12 @@ I noticed that to define a constant `Vector2D::ZERO` as a vector zero has no sen
 
 For that reason, I removed that constant.
 
+I also add the class method `Vector[]`, and performed non important methods for `Line`, like `Line#to_s`.
+
+Finished tests:
+- `TestLine`
+- `TestLine2D`
+
 ## 20/09/2025
 
 New instance methods:
@@ -74,7 +80,8 @@ That vertices are represented by the `Vector2D` class, and today I constructed t
 The responsability of both classes is to have an structure of themselves, and later create wrapper classes to render with Ruby2D (the gem to represent information into the screen).
 
 ### TO DO
-- Tests for `Barretina::Space2D::Line2D` and `Barretina::Space2D::Polygon`
+- (✔️ 23/09/2025) Tests for `Barretina::Space2D::Line2D`
+- Test for `Barretina::Space2D::Polygon`
 
 ## 29/08/2025
 
