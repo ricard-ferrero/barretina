@@ -6,12 +6,17 @@ I work on this project only in my spare time, that means a lot of time between w
 
 Note: the entries are in reverted order, like the entries of a blog.
 
+## 23/09/2025
+
+I noticed that to define a constant `Vector2D::ZERO` as a vector zero has no sence: every instance can change his own public attributes, then the `Vector2D::ZERO` can be a vector with coordenates non zero.
+
+For that reason, I removed that constant.
+
 ## 20/09/2025
 
 New instance methods:
 - `Vector2D#add!`
 - `Vector2D#substract!`
-- `Vector2D#scalar!`
 - `Vector2D#scalar!`
 
 New class methods:

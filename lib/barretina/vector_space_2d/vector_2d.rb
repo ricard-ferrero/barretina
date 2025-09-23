@@ -9,11 +9,9 @@ module Barretina
         end
 
         def zero
-          @origin ||= Vector2D.new 0, 0
+          Vector2D.new 0, 0
         end
       end
-
-      ZERO = Vector2D.zero
 
       def initialize x, y
         @coordenates = [x, y]
