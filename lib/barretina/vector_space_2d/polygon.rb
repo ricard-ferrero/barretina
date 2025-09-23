@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Barretina
   module VectorSpace2D
     class Polygon
