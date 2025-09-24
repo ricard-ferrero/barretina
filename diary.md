@@ -8,9 +8,20 @@ Note: the entries are in reverted order, like the entries of a blog.
 
 ## 24/09/2025
 
+### Upgrading Gem
+
 Today I've reviewed some tests, and create the Rakefile. At the moment, it only runs the tests.
 
 I updated the README file and also upgrade the gem to `v0.2.1`.
+
+### Starting the real app
+
+Then, after upgrading and finishing the algebraic classes to work with 2D vector spaces, I buid the firsts elements for the real app, starting with the UI.
+
+One important thing it's that I had defined an architecture for the project (but, at the moment, it's drawn in a paper, not digital).
+
+### TO DO
+- Review the architecture and add in the documentation
 
 ## 23/09/2025
 

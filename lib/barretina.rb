@@ -2,8 +2,12 @@
 
 require 'barretina/vector_space'
 require 'barretina/vector_space_2d'
-require 'barretina/canvas'
+require 'barretina/ui'
 
 module Barretina
   TITLE = "Barretina v#{VERSION}"
+
+  def self.run
+    UI.run
+  end
 end
