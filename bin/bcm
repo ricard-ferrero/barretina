@@ -8,7 +8,7 @@ require 'irb'
 include Barretina::VectorSpace
 include Barretina::VectorSpace2D
 
-puts "\e[1mBCM\e[0m - Barretina Console Mode"
+puts "\e[1mBCM\e[0m - Barretina Console Mode v#{Barretina::VERSION}"
 
 IRB.setup(nil) # El argumento 'nil' es para la ruta de la aplicación, generalmente no es necesaria aquí
 
