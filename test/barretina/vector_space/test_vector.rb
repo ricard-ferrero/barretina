@@ -10,7 +10,7 @@ class TestVector < Minitest::Test
   def setup
     @vector_a = Vector.new
     @vector_b = Vector.new 1
-    @vector_c = Vector.new -15, 35, -115
+    @vector_c = Vector.new(-15, 35, -115)
     @vector_d = Vector.new 1.25, 3.1415
   end
 

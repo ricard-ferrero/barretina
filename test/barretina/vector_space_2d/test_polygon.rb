@@ -43,7 +43,6 @@ class TestPolygon < Minitest::Test
     new_vertex = Vector2D.new(0, 1)
     @polygon.add_vertex new_vertex
     assert_equal @polygon.lines.count, 4
-    assert @polygon.lines.includes?
   end
 
   def test_that_polygon_updates_lines_when_a_vertex_is_inserted

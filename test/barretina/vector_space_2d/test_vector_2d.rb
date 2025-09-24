@@ -44,7 +44,7 @@ class TestVector2D < Minitest::Test
     argument_error_five = "wrong number of arguments (given 5, expected 2)"
     argument_error_ten = "wrong number of arguments (given 10, expected 2)"
 
-    assert_raises(ArgumentError, argument_error_five) { Vector2D.new(1,2,3) }
+    assert_raises(ArgumentError, argument_error_three) { Vector2D.new(1,2,3) }
     assert_raises(ArgumentError, argument_error_five) { Vector2D.new(1,2,3,4,5) }
     assert_raises(ArgumentError, argument_error_ten) { Vector2D.new(1,2,3,4,5,6,7,8,9,0) }
   end
@@ -166,7 +166,7 @@ class TestVector2D < Minitest::Test
     assert_equal "(3, 8)", @vector_2d.to_s
 
     setup
-    @vector_2d.scalar! -1
+    @vector_2d.scalar!(-1)
     assert_equal "(-3, -8)", @vector_2d.to_s
 
     setup
@@ -174,7 +174,7 @@ class TestVector2D < Minitest::Test
     assert_equal "(9, 24)", @vector_2d.to_s
 
     setup
-    @vector_2d.scalar! -3
+    @vector_2d.scalar!(-3)
     assert_equal "(-9, -24)", @vector_2d.to_s
 
     setup

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    barretina (0.1.2)
+    barretina (0.2.0)
       irb (~> 1.15)
       ruby2d (~> 0.12.1)
 
@@ -22,6 +22,7 @@ GEM
     psych (5.2.6)
       date
       stringio
+    rake (13.3.0)
     rdoc (6.14.2)
       erb
       psych (>= 4.0.0)
@@ -37,6 +38,7 @@ PLATFORMS
 DEPENDENCIES
   barretina!
   minitest (~> 5.25)
+  rake (~> 13.3)
 
 BUNDLED WITH
    2.6.9

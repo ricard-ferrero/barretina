@@ -6,6 +6,12 @@ I work on this project only in my spare time, that means a lot of time between w
 
 Note: the entries are in reverted order, like the entries of a blog.
 
+## 24/09/2025
+
+Today I've reviewed some tests, and create the Rakefile. At the moment, it only runs the tests.
+
+I updated the README file and also upgrade the gem to `v0.2.1`.
+
 ## 23/09/2025
 
 I noticed that to define a constant `Vector2D::ZERO` as a vector zero has no sence: every instance can change his own public attributes, then the `Vector2D::ZERO` can be a vector with coordenates non zero.
@@ -108,7 +114,7 @@ I have made the tests for the object `VectorSpace::Vector`, which has the path `
 I deleted the `lib/barretina/version.rb` file, and put the version in the properly `lib/barretina.rb` file.
 
 ### TO DO
-- Prepare a rake file to run all future tests
+- (✔️ 24/09/2025) Prepare a rake file to run all future tests
 
 ## 04/07/2025
 

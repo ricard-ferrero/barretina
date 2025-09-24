@@ -4,7 +4,7 @@ module Barretina
   module VectorSpace
     class Vector
       def self.[](*args)
-        Vector.new *args
+        Vector.new(*args)
       end
 
       attr_accessor :coordenates
@@ -26,7 +26,7 @@ module Barretina
       end
 
       def * scalar
-        Vector.new *coordenates.map { |c| c * scalar }
+        Vector.new(*coordenates.map { |c| c * scalar })
       rescue => e
         raise "Scalar value must be a Numeric instance (recomended Integer or Float), not a #{scalar.class}" unless scalar.is_a? Numeric
         raise e
@@ -53,7 +53,7 @@ module Barretina
         end
 
         def add vector, &block
-          Vector.new *[coordenates, vector.coordenates].transpose.map(&block)
+          Vector.new(*[coordenates, vector.coordenates].transpose.map(&block))
         rescue IndexError => e
           raise IndexError, "Impossible add or substract vectors with different dimesions"
         rescue => e
