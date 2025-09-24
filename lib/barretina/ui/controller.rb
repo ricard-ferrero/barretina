@@ -1,8 +1,17 @@
 module Barretina
   module UI
     class Controller
-      def manage_events type, event
-        puts event
+      def mouse event
+        case event.type
+        when :down
+          UI.send_vector [event.x, event.y]
+        end
+      end
+
+      def key event
+        case event.type
+        when :held
+        end
       end
     end
   end

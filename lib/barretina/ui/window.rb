@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Barretina
   module UI
     class Window
@@ -9,6 +11,8 @@ module Barretina
 
       WINDOW_WIDTH = 1920
       WINDOW_HEIGHT = 1080
+
+      attr_reader :width, :height
 
       def run
         init_window
@@ -33,9 +37,9 @@ module Barretina
         end
 
         def init_events_handler
-          [:mouse, :key].each do |type|
-            on type do |event|
-              UI.send_events(type, event)
+          [:mouse, :key].each do |device|
+            on device do |event|
+              UI.send_events(device, event)
             end
           end
         end
