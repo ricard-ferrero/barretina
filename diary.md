@@ -10,6 +10,8 @@ Note: the entries are in reverted order, like the entries of a blog.
 
 First time I put into the window the coordenate lines. Experimenting with that and origin.
 
+At last, I started to create a state machine to the `Barretina::UI::Controller`. The idea is to use the controller to catch all the window events and decide the corret behaviour to activate.
+
 ## 24/09/2025
 
 ### Upgrading Gem
