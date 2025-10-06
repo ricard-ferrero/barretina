@@ -6,6 +6,10 @@ I work on this project only in my spare time, that means a lot of time between w
 
 Note: the entries are in reverted order, like the entries of a blog.
 
+## 06/10/2025
+
+First time I put into the window the coordenate lines. Experimenting with that and origin.
+
 ## 24/09/2025
 
 ### Upgrading Gem
