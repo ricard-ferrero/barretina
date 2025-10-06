@@ -8,13 +8,12 @@ require_relative 'ui/renderer'
 module Barretina
   module UI
     extend self
-    
-    @window = Window.new
-    @controller = Controller.new
-    @renderer  = Renderer.new
 
     def run
-      @window.run
+      Window.init
+      @controller = Controller.new
+      @renderer  = Renderer.new
+      Window.run
     end
 
     def send_events device, event
