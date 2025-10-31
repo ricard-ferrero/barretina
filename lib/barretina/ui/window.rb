@@ -31,6 +31,7 @@ module Barretina
       def initialize
         init_window
         init_events_handler
+        init_update_handler
       end
 
       def run
@@ -58,6 +59,12 @@ module Barretina
             on device do |event|
               UI.send_events(device, event)
             end
+          end
+        end
+
+        def init_update_handler
+          update do
+            Engine.work
           end
         end
     end

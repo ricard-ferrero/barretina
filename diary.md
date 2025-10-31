@@ -12,6 +12,10 @@ I updated the controller methods. Now, the window sends the events to the contro
 
 All these is because Rub2D gem has a tiny problem (with big consequences): don't let you ask for the user input events, instead has a defined method to send messages when an event success. I knew that when I chose this gem, but I didn't imagine that can be a problem. Also, there aren't other gems to manage graphics at the moment. You know, Ruby is more used for other things, not for desktop apps.
 
+After that, this project has the minimum to render the window and get inputs.
+
+I created a new module `Barretina::Engine`, where will handle de data and send the correct render information.
+
 ## 06/10/2025
 
 First time I put into the window the coordenate lines. Experimenting with that and origin.

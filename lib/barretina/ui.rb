@@ -23,5 +23,9 @@ module Barretina
     def send_vector coordenates
       @renderer.generate_vector coordenates
     end
+
+    def events
+      @controller.events
+    end
   end
 end
