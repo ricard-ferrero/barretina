@@ -17,7 +17,7 @@ module Barretina
     end
 
     def send_events device, event
-      @controller.send(device, event)
+      @controller.send("set_#{device}_event", event)
     end
 
     def send_vector coordenates
